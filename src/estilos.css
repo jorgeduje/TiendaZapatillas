@@ -1,0 +1,285 @@
+                                  /* GLOBALAES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Style Script';
+}
+
+.contenedor{
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+}
+.contenedor-nocturno{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+
+
+
+                                    /* HEADER */
+
+
+.header{
+
+    height: 80vh;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    padding: 15px;
+    background-color: black;
+    width: 100%;
+}
+
+.nav a{
+    padding: 0 15px;
+    border-radius: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 10px;
+   color: white;
+    margin-right: 50px;
+    
+}
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.titulosHeader{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+.titulosHeader h1{
+    font-size: 60px;
+}
+
+
+                                /* PRINCIPAL */
+
+
+.titulosPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(36, 34, 34);
+    padding: 30px 0;
+    
+}
+
+.productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 50px 0;
+}
+.card{
+    width: 26%;
+    margin-bottom: 30px;
+    height: 450px;
+    box-shadow: 5px 5px 2px gray;
+}
+
+.card-img-top{
+    height: 50%;
+    object-fit: cover;
+}
+
+.card-title{
+    color: #302b63;
+    text-align: center;
+    font-size: 30px;
+}
+.productos h2{
+    text-align: center;
+}
+.productos p{
+   font-size: 25px;
+}
+.talle{
+    color: #302b63;
+    text-align: center;
+    
+
+}
+
+
+
+.boton{
+    background-color: #3fc24e;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    margin-right: 10px;
+}
+
+.boton:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.botonRojo{
+    background-color: #e3534c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    
+}
+.botonRojo:hover{
+    color: white;
+    text-decoration: line-through;
+}
+
+
+
+                                /* FOOTER */
+
+
+.footer{
+    height: 180px;
+    background-color:rgb(204, 196, 196);
+    padding-top: 40px;
+}
+
+.titulosFooter{
+    color: black;
+    text-align: center;
+}
+
+.iconos{
+    margin-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 40px;
+}
+
+.iconos a{
+    color: black;
+  
+    
+}
+
+.iconos a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+video{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+    z-index: -1;
+    /* -webkit-filter: ; */
+}
+
+.animar{
+    animation: titulo 2s infinite forwards alternate;
+}
+
+
+@keyframes titulo{
+    from{
+   
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.7);
+    }
+ }
+
+
+ 
+
+
+ 
+ @media screen and (max-width: 1100px){
+    .titulosHeader h1{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .card-title{
+     font-size: 25px;   
+    }
+    .card{
+        width: 30%;
+    }
+ }
+
+
+
+
+
+
+ @media screen and (max-width: 800px){
+    .card-title{
+        font-size: 20px;   
+       }
+ }
+
+
+
+
+
+ @media screen and (max-width: 725px) {
+    .nav a{
+        font-size: 20px;
+       margin-right: 0;
+    }
+
+    .titulosHeader h1{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .titulosHeader h2{
+        font-size: 20px;
+    }
+    .titulosPrincipal{
+       align-items: flex-start;
+       padding-left: 20px;
+    }
+    .card{
+        width: 60%;
+        
+    }
+    .card-title{
+        font-size: 20px;   
+       }
+    
+    
+       
+}
+
+@media screen and (max-width: 380px){
+    .boton{
+        padding: 5px 10px;
+    }
+    .botonRojo{
+        padding: 5px 10px;
+    }
+}
+
